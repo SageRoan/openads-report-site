@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — OpenAds Report</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f6f7f8;
+    --surface: #ffffff;
+    --text: #1b1f23;
+    --muted: #5b6570;
+    --border: #e2e5e9;
+    --accent: #2f6fed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1418;
+      --surface: #161c21;
+      --text: #e8ebee;
+      --muted: #93a1ac;
+      --border: #232b32;
+      --accent: #6fa0ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 48px 20px;
+  }
+  .wrap { max-width: 680px; margin-inline: auto; }
+  .back { display: inline-block; margin-bottom: 24px; font-size: 14px; color: var(--muted); text-decoration: none; }
+  .back:hover { color: var(--accent); }
+  h1 { font-size: clamp(26px, 5vw, 32px); line-height: 1.2; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 13px; margin: 0 0 32px; }
+  h2 { font-size: 17px; margin: 32px 0 10px; }
+  p { font-size: 15px; line-height: 1.7; margin: 0 0 12px; max-width: 64ch; }
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  li { font-size: 15px; line-height: 1.7; margin-bottom: 8px; max-width: 60ch; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+  footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--border); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./index.html">&larr; OpenAds Report</a>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: septiembre de 2026</p>
+
+  <p>
+    Esta política describe cómo <strong>OpenAds Report</strong>, una
+    herramienta de uso interno de OpenAds, accede y utiliza datos de las
+    APIs de Google Ads y Google Analytics 4 (GA4).
+  </p>
+
+  <h2>Quién usa esta aplicación</h2>
+  <p>
+    OpenAds Report es de uso exclusivamente interno: la utiliza el equipo de
+    OpenAds para generar reportes de desempeño publicitario para sus propios
+    clientes de agencia. No es un producto distribuido públicamente ni
+    disponible para terceros fuera de OpenAds.
+  </p>
+
+  <h2>Datos a los que accede</h2>
+  <p>La aplicación solicita acceso de <strong>solo lectura</strong> a:</p>
+  <ul>
+    <li><strong>Google Ads API</strong> (scope <code>adwords</code>): datos de cuentas, campañas, grupos de anuncios y métricas de rendimiento (gasto, clics, conversiones, etc.) de las cuentas publicitarias que OpenAds administra.</li>
+    <li><strong>Google Analytics Data / Admin API</strong> (scope <code>analytics.readonly</code>): propiedades, dimensiones y métricas de tráfico y comportamiento de los sitios web de esos mismos clientes.</li>
+  </ul>
+
+  <h2>Cómo se usan los datos</h2>
+  <div class="card">
+    <ul>
+      <li>Generar reportes periódicos (mensuales/quincenales) de desempeño de campañas para cada cliente.</li>
+      <li>Consolidar métricas de Google Ads y GA4 en un mismo documento de reporte.</li>
+      <li>Ningún dato se utiliza para entrenar modelos de machine learning, publicidad, ni ningún fin ajeno a la generación de estos reportes.</li>
+    </ul>
+  </div>
+
+  <h2>Qué NO hace esta aplicación</h2>
+  <ul>
+    <li>No comparte, vende ni transfiere datos a terceros bajo ninguna circunstancia.</li>
+    <li>No modifica campañas, presupuestos ni configuraciones — todo el acceso es de solo lectura.</li>
+    <li>No otorga acceso a personas fuera del equipo de OpenAds; las credenciales de la aplicación no se distribuyen.</li>
+  </ul>
+
+  <h2>Almacenamiento y retención</h2>
+  <p>
+    Los reportes generados se almacenan de forma privada en los sistemas
+    internos de OpenAds. Las credenciales de acceso (tokens OAuth) se
+    guardan de forma privada y nunca se incluyen en código fuente ni en
+    repositorios públicos. Los datos crudos consultados a las APIs no se
+    conservan más allá de lo necesario para generar cada reporte.
+  </p>
+
+  <h2>Revocar el acceso</h2>
+  <p>
+    Cualquier cuenta de Google conectada a esta aplicación puede revocar el
+    acceso en cualquier momento desde
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">la configuración de la Cuenta de Google</a>,
+    buscando "OpenAds Report" en la lista de aplicaciones conectadas.
+  </p>
+
+  <h2>Contacto</h2>
+  <p>
+    Ante cualquier consulta sobre esta política o el manejo de datos,
+    escribir a <a href="mailto:gever.salazar21@gmail.com">gever.salazar21@gmail.com</a>.
+  </p>
+
+  <footer>OpenAds Report — herramienta interna, no comercial</footer>
+</div>
+</body>
+</html>
